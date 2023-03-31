@@ -24,10 +24,4 @@ vue3版本数据大屏模板
 3. 响应式自适应不同分辨率的屏幕，通过百分比+ElementPlus的布局方式进行配置
 4. 详细文档看vue2码云地址的详细说明，vue3码云文档不在进行详细介绍
 ## QQ群交流
-<table>
-    <tr>
-        <td><img src="https://koi-fish.oss-cn-beijing.aliyuncs.com/koi/screen/images/QQ.JPG"/></td>
-        <td><img src="https://koi-fish.oss-cn-beijing.aliyuncs.com/koi/screen/images/QQ.JPG"/></td>
-    </tr>
-</table>
 
