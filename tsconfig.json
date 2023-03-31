@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true, // 默认true
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true, // 编译后不输出任何js文件
+    "allowJs": true, // 允许编译器编译JS，JSX文件
+    "baseUrl": ".", // paths 路径解析起点
+    "paths": {
+      "@/*": [ // 别名路径设置
+        "src/*"
+      ]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js"], // ts支持js
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
