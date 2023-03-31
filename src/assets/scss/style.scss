@@ -204,20 +204,22 @@ a:hover {
 
 // 设置默认背景图片
 #index {
-  color: darkturquoise;
-  width: 100%;
-  height: 100%;
+width: 1920px;
+height: 1080px;
   // 图片缩放自适应
-  background: url("../images/bg.png") center center no-repeat;
-  //background: url("../bgPage.jpg") center center no-repeat;
-  background-size: 100% 100%;
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left top;
   overflow: hidden;
 }
 
 // 最小只支持1000px * 600px，太小了margin-bottom和padding-bottom属性比例不够协调。
-
 .koi-body-png {
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg.png") center center no-repeat;
+  background-size: 100% 100%;
   // 头部布局
   .header {    
       position       : relative;

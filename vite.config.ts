@@ -1,9 +1,15 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),
+  AutoImport({
+    imports: ["vue", "vue-router"],
+    dts:"src/auto-import.d.ts"
+  }),
+  ],
   server: {
     host: '0.0.0.0', // 本地IP访问，localhost访问
     port: 7778, // 端口号
@@ -14,7 +20,7 @@ export default defineConfig({
     alias: [
       {
         find: '@', // 配置别名，tsconfig.json里面也需要配置. @等价于src
-        replacement: resolve(__dirname, 'src') 
+        replacement: resolve(__dirname, 'src')
       }
     ]
   }
